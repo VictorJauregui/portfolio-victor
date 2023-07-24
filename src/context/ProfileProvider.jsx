@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import profileContext from './ProfileContext'
 
 const ProfileProvider = ({children}) => {
-    const [lightMode, setLightMode] = useState(true)
+    const [lightMode, setLightMode] = useState(false)
     const [spanishMode, setSpanishMode] = useState(true)
 
 
