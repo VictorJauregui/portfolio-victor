@@ -16,7 +16,17 @@ import ProgressBar from '../components/ProgressBar'
 import profileContext from '../context/ProfileContext'
 
 const Skills = () => {
-    const { lightMode, spanishMode } = useContext(profileContext);
+    const { lightMode, spanishMode, colour } = useContext(profileContext);
+
+    const colorFont =
+    (colour === 'red') ? 'font-extrabold text-5xl text-red-600 transition duration-1000' :
+    (colour === 'green') ? 'font-extrabold text-5xl text-green-500 transition duration-1000'  :
+    (colour === 'yellow') ? 'font-extrabold text-5xl text-yellow-300 transition duration-1000'  :
+    (colour === 'purple') ? 'font-extrabold text-5xl text-[#FF00D6] transition duration-1000'  :
+    (colour === 'orange') ? 'font-extrabold text-5xl text-orange-500 transition duration-1000'  :
+    (colour === 'blue') ? 'font-extrabold text-5xl text-[#00E0FF] transition duration-1000'  :
+    '';
+
   return (
     <div
       className={
@@ -28,7 +38,10 @@ const Skills = () => {
       <SidebarLeft />
       <Language />
       <div className="m-20 w-3/4">
-        <h2 className="text-white font-extrabold text-5xl">{spanishMode ? "Herramientas" : "Skills"}</h2>
+        <div className={colorFont}>
+            <h2>{spanishMode ? "Herramientas" : "Skills"}</h2>
+
+        </div>
         <div className={lightMode ? 'bg-white mt-10 rounded p-10 text-[#002259]' : 'bg-[#223343] border-2 mt-10 rounded p-10 text-white' }>
             <div className='grid grid-cols-2 gap-x-40 gap-y-10'>
                 <div className=''>

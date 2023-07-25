@@ -4,6 +4,7 @@ import profileContext from './ProfileContext'
 const ProfileProvider = ({children}) => {
     const [lightMode, setLightMode] = useState(false)
     const [spanishMode, setSpanishMode] = useState(true)
+    const [colour, setColour] = useState("blue")
 
 
 
@@ -13,7 +14,10 @@ const ProfileProvider = ({children}) => {
         lightMode,
         setLightMode,
         setSpanishMode,
-        spanishMode
+        spanishMode,
+        colour,
+        setColour
+
     }}
     >{children}</profileContext.Provider>
   )

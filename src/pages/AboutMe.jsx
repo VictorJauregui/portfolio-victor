@@ -9,7 +9,16 @@ import AboutMeSpanish from "../components/AboutMeSpanish";
 import AboutMeEnglish from "../components/AboutMeEnglish";
 
 const AboutMe = () => {
-  const { lightMode, spanishMode } = useContext(profileContext);
+  const { lightMode, spanishMode, colour } = useContext(profileContext);
+
+  const colorFont =
+  (colour === 'red') ? 'font-extrabold text-5xl text-red-600 transition duration-1000' :
+  (colour === 'green') ? 'font-extrabold text-5xl text-green-500 transition duration-1000'  :
+  (colour === 'yellow') ? 'font-extrabold text-5xl text-yellow-300 transition duration-1000'  :
+  (colour === 'purple') ? 'font-extrabold text-5xl text-[#FF00D6] transition duration-1000'  :
+  (colour === 'orange') ? 'font-extrabold text-5xl text-orange-500 transition duration-1000'  :
+  (colour === 'blue') ? 'font-extrabold text-5xl text-[#00E0FF] transition duration-1000'  :
+  '';
 
   return (
     <div
@@ -22,7 +31,9 @@ const AboutMe = () => {
       <SidebarLeft />
       <Language />
       <div className="m-20 w-3/4">
-        <h2 className="text-white font-extrabold text-5xl">{spanishMode ? "Sobre mi" : "About me"}</h2>
+        <div className={colorFont}>
+          <h2>{spanishMode ? "Sobre mi" : "About me"}</h2>
+        </div>
         {spanishMode ? <AboutMeSpanish /> : <AboutMeEnglish />}
       </div>
     </div>
