@@ -30,12 +30,12 @@ const SidebarLeft = () => {
       '';
 
       const bgFullStack =
-      (colour === 'red') ? 'text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-red-600 mb-10' :
-      (colour === 'green') ? 'text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-green-500 mb-10'  :
-      (colour === 'yellow') ? 'text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-yellow-300 mb-10'  :
-      (colour === 'purple') ? 'text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-[#FF00D6] mb-10'  :
-      (colour === 'orange') ? 'text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-orange-500 mb-10'  :
-      (colour === 'blue') ? 'text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-[#00E0FF] mb-10'  :
+      (colour === 'red') ? '2xl:text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-red-600 mb-20 2xl:mb-10' :
+      (colour === 'green') ? '2xl:text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-green-500 mb-20 2xl:mb-10'  :
+      (colour === 'yellow') ? '2xl:text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-yellow-300 mb-20 2xl:mb-10'  :
+      (colour === 'purple') ? '2xl:text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-[#FF00D6] mb-20 2xl:mb-10'  :
+      (colour === 'orange') ? '2xl:text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-orange-500 mb-20 2xl:mb-10'  :
+      (colour === 'blue') ? '2xl:text-xl font-bold text-black transform rotate-3 transition duration-1000 bg-[#00E0FF] mb-20 2xl:mb-10'  :
       '';
   
 
@@ -56,12 +56,12 @@ const SidebarLeft = () => {
     : `${bgFullStack}`;
 
   return (
-    <div className='w-1/4  flex flex-col items-center border-r my-10  '>
+    <div className='hidden 2xl:w-1/4 lg:flex flex-col items-center border-r my-10  '>
         
-            <img className='px-10 h-96 pt-10 pb-5 transform hover:rotate-12 transition duration-1000' src={myPicture} alt="" />
-            <h2 className='text-white font-extrabold text-3xl z-10  '>VÍCTOR JAUREGUI</h2>
+            <img className='px-14 lg:h-60 2xl:h-80 pt-10 pb-5 transform hover:rotate-12 transition duration-1000' src={myPicture} alt="" />
+            <h2 className='text-white font-extrabold text-xl 2xl:text-3xl z-10  '>VÍCTOR JAUREGUI</h2>
             <p className={paragraphClasses}>FULL STACK DEVELOPER</p>
-            <div className='flex flex-col justify-start  w-full mx-20 '>
+            <div className='flex flex-col justify-start  w-full xl:mx-10 2xl:mx-20 '>
                 <NavLink className={classesToApplyAboutMe }  to='/about-me'>
                         <p className='p-2 '>{spanishMode ? 'SOBRE MI' : 'ABOUT ME ' }</p>
                 </NavLink>

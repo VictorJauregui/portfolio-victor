@@ -39,7 +39,7 @@ const Projects = () => {
       <div className={colorFont}>
         <h2>{spanishMode ? "Proyectos" : "Projects"}</h2>
       </div>
-      <div className={lightMode ? 'bg-white mt-10 rounded p-10 text-[#002259] lg:max-h-[70vh] lg:overflow-y-scroll lg:scrollbar-hide' : 'bg-[#223343] border-2 mt-10 rounded p-10 text-white lg:max-h-[70vh] lg:overflow-y-scroll lg:scrollbar-hide' }>
+      <div className={lightMode ? 'bg-white mt-10 rounded p-10 text-[#002259] max-h-[70vh] overflow-y-scroll scrollbar-hide' : 'bg-[#223343] border-2 mt-10 rounded p-10 text-white max-h-[70vh] overflow-y-scroll scrollbar-hide' }>
         <img className='w-40' src={lightMode ? musskyBlack : mussky} alt="" />
         <div className='flex h-full items-center mt-6'>
             <div className='w-3/5 h-full '>

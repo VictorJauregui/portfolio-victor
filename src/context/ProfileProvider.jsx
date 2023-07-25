@@ -5,6 +5,7 @@ const ProfileProvider = ({children}) => {
     const [lightMode, setLightMode] = useState(false)
     const [spanishMode, setSpanishMode] = useState(true)
     const [colour, setColour] = useState("blue")
+    const [menuPhone, setMenuPhone] = useState(false)
 
 
 
@@ -16,7 +17,9 @@ const ProfileProvider = ({children}) => {
         setSpanishMode,
         spanishMode,
         colour,
-        setColour
+        setColour,
+        menuPhone,
+        setMenuPhone
 
     }}
     >{children}</profileContext.Provider>
