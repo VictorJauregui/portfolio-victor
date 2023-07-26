@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import profileContext from "../context/ProfileContext";
 
 const ProgressBar = ({ porcentage }) => {
-  const { lightMode, colour} = useContext(profileContext);
+  const { colour} = useContext(profileContext);
   
   const colorProgressBar =
   (colour === 'red') ? 'bg-red-600 h-full rounded-full transition duration-1000' :
