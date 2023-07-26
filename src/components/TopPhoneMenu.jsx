@@ -30,7 +30,7 @@ const TopPhoneMenu = () => {
       '';
 
       const imgBurguer =
-      (colour === 'red') ? `${red} ` :
+      (colour === 'red') ? red  :
       (colour === 'green') ? green   :
       (colour === 'yellow') ? yelow  :
       (colour === 'purple') ? purple  :
@@ -55,7 +55,7 @@ const TopPhoneMenu = () => {
             <p className={bgFullStack}>Full Stack Developer</p>
         </div>
         <div className='flex ml-auto  mr-6 '>
-            <img className='w-8 h-4 cursor-pointer' src={imgBurguer} onClick={handleOpenModalMenu} alt="" />
+            <img className='w-5 h-3 cursor-pointer ' src={imgBurguer} onClick={handleOpenModalMenu} alt="" />
         </div>
     </div>
   )

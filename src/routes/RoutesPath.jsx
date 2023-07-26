@@ -6,6 +6,7 @@ import Experience from '../pages/Experience'
 import Skills from '../pages/Skills'
 import Projects from '../pages/Projects'
 import Hobbies from '../pages/Hobbies'
+import Contact from '../pages/Contact'
 
 
 const RoutesPath = () => {
@@ -19,6 +20,7 @@ const RoutesPath = () => {
             <Route path="/skills" element={<Skills />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/hobbies" element={<Hobbies />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     </BrowserRouter>
 
