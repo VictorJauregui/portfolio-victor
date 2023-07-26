@@ -9,9 +9,6 @@ import green from '../assets/colours/green.png'
 import light from '../assets/lightMode.png'
 import darkMode from '../assets/darkMode.png'
 
-import linkedin from '../assets/RRSS/in.png'
-import github from '../assets/RRSS/github.png'
-
 import profileContext from '../context/ProfileContext'
 import { NavLink, useLocation } from 'react-router-dom'
 

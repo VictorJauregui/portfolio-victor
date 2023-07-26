@@ -1,4 +1,4 @@
-import React, { useCallback, useContext } from 'react'
+import React, {  useContext } from 'react'
 import profileContext from '../context/ProfileContext'
 import red from '../assets/colours/red.png'
 import blue from '../assets/colours/blue.png'
